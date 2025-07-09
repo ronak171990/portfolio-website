@@ -72,44 +72,31 @@
   <section class="min-h-screen flex items-center justify-center text-center px-6 relative z-10">
     <div>
       <h1 class="text-5xl md:text-7xl font-bold mb-4">Hi, I'm Ronak Patel</h1>
-      <h2 class="text-lg md:text-xl text-gray-400 mb-2 italic">Ex-Finance Leader | Data Analyst | Turning Numbers into Narratives</h2>
+      <h2 class="text-lg md:text-xl text-gray-400 mb-2 italic">Ex-Finance Operations Lead | Data Analyst | Turning Numbers into Narratives</h2>
       <h2 class="text-2xl md:text-3xl text-indigo-400 mb-6">
         <span id="typed"></span>
       </h2>
       <a href="#projects" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition">Explore Projects</a>
     </div>
   </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="py-20 px-6 bg-gray-900 text-white">
-    <div class="max-w-6xl mx-auto">
-      <h3 class="text-4xl font-semibold text-center mb-12">Skills</h3>
-      <div class="grid grid-cols-3 md:grid-cols-6 gap-6 text-center">
-        <div class="border border-indigo-500 px-4 py-2 rounded-full text-indigo-300 bg-gray-800">SQL</div>
-        <div class="border border-yellow-400 px-4 py-2 rounded-full text-yellow-300 bg-gray-800">Power BI</div>
-        <div class="border border-blue-500 px-4 py-2 rounded-full text-blue-300 bg-gray-800">Python</div>
-        <div class="border border-green-500 px-4 py-2 rounded-full text-green-300 bg-gray-800">Excel</div>
-        <div class="border border-orange-400 px-4 py-2 rounded-full text-orange-300 bg-gray-800">Tableau</div>
-        <div class="border border-white px-4 py-2 rounded-full text-white bg-gray-800">GitHub</div>
-      </div>
-    </div>
-  </section>
-
+  
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      new Typed("#typed", {
-        strings: ["Data Analyst", "Dashboard Designer", "SQL Expert", "Power BI Specialist"],
-        typeSpeed: 60,
-        backSpeed: 40,
-        loop: true
-      });
+  new Typed("#typed", {
+    strings: ["Data Analyst", "SQL Expert", "Power BI Specialist", "Ex-Finance Leader"],
+    typeSpeed: 50,      // Slower typing
+    backSpeed: 25,      // Slower deleting
+    startDelay: 300,    // Optional delay before typing starts
+    loop: true
+  });
 
-      const icons = document.querySelectorAll('.float-icon');
-      icons.forEach(icon => {
-        icon.style.animationDuration = `${Math.random() * 10 + 20}s`;
-        icon.style.opacity = Math.random() * 0.5 + 0.3;
-      });
-    });
+  const icons = document.querySelectorAll('.float-icon');
+  icons.forEach(icon => {
+    icon.style.animationDuration = `${Math.random() * 10 + 20}s`;
+    icon.style.opacity = Math.random() * 0.5 + 0.3;
+  });
+});
+
   </script>
 </body>
 </html>
