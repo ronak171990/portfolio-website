@@ -363,17 +363,23 @@
   <!-- About Section -->
   <section id="about" class="py-20 px-6 relative z-10">
     <div class="max-w-6xl mx-auto">
-      <img src="assets/ronak-photo.png" alt="Ronak Patel" class="rounded-2xl shadow-xl w-full max-w-xs mx-auto">
-      <div>
+      <div class="reveal">
+        <h3 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
           About Me
         </h3>
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div class="glass rounded-3xl p-8">
-            <div class="w-64 h-64 mx-auto rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 p-1">
-              <div class="w-full h-full rounded-full bg-gray-800 flex items-center justify-center">
-                <i class="fas fa-user text-8xl text-indigo-400"></i>
+            <div class="w-64 h-64 mx-auto rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 p-1 hover:scale-105 transition-transform duration-300">
+                <div class="w-full h-full rounded-full overflow-hidden bg-gray-800 flex items-center justify-center">
+                <img id="profilePhoto" 
+                  src="assets/ronak-photo.png" 
+                  alt="Ronak Patel" 
+                  class="w-full h-full object-cover rounded-full opacity-0 transition-opacity duration-500"
+                  onload="this.style.opacity='1'"
+                  onerror="showFallbackIcon(this)">
+                  <i id="fallbackIcon" class="fas fa-user text-8xl text-indigo-400" style="display: none;"></i>
+                </div>
               </div>
-            </div>
           </div>
           <div class="space-y-6">
             <p class="text-lg leading-relaxed text-gray-300">
