@@ -81,22 +81,31 @@
   </section>
   
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-  new Typed("#typed", {
-    strings: ["Data Analyst", "SQL Expert", "Power BI Specialist", "Ex-Finance Leader"],
-    typeSpeed: 50,      // Slower typing
-    backSpeed: 25,      // Slower deleting
-    startDelay: 300,    // Optional delay before typing starts
-    loop: true
-  });
+    document.addEventListener("DOMContentLoaded", function () {
+      new Typed("#typed", {
+        strings: [
+          "Ex-Finance Operations Lead",
+          "Data Analyst",
+          "SQL Expert",
+        "Power BI Specialist",
+        "Turning Numbers into Narratives"
+      ],
+      typeSpeed: 40,           // Slow typing
+      backSpeed: 20,           // Slow deleting
+      backDelay: 1500,         // Wait before deleting
+      startDelay: 300,         // Delay before typing starts
+      smartBackspace: true,    // Only backspace what’s needed
+      loop: true,
+      showCursor: true,
+      cursorChar: "|"
+    });
 
-  const icons = document.querySelectorAll('.float-icon');
-  icons.forEach(icon => {
-    icon.style.animationDuration = `${Math.random() * 10 + 20}s`;
-    icon.style.opacity = Math.random() * 0.5 + 0.3;
+    const icons = document.querySelectorAll('.float-icon');
+    icons.forEach(icon => {
+      icon.style.animationDuration = `${Math.random() * 10 + 20}s`;
+      icon.style.opacity = Math.random() * 0.5 + 0.3;
+    });
   });
-});
-
   </script>
 </body>
 </html>
