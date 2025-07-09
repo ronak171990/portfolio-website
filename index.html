@@ -84,25 +84,23 @@
     document.addEventListener("DOMContentLoaded", function () {
       new Typed("#typed", {
       strings: ["Data Analyst", "SQL Expert", "Power BI Specialist", "Dashboard Designer"],
-      typeSpeed: 40,           // Slow typing
-      backSpeed: 20,           // Slow deleting
-      backDelay: 1500,         // Wait before deleting
-      startDelay: 300,         // Delay before typing starts
-      smartBackspace: true,    // Only backspace what’s needed
+      typeSpeed: 40,
+      backSpeed: 20,
+      backDelay: 2000,
+      startDelay: 300,
+      smartBackspace: true,
       loop: true,
       showCursor: true,
       cursorChar: "|"
-    });
+   });
 
     const icons = document.querySelectorAll('.float-icon');
     icons.forEach(icon => {
       icon.style.animationDuration = `${Math.random() * 10 + 20}s`;
       icon.style.opacity = Math.random() * 0.5 + 0.3;
+      });
     });
-  });
   </script>
-</body>
-</html>
 
 
   <!-- About -->
