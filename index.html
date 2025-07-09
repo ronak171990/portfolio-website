@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ronak Patel | Data Analyst Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <style>
+    body {
+      background: #0e0e0e;
+      color: white;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .neumorph {
+      box-shadow: 8px 8px 16px #0a0a0a, -8px -8px 16px #1a1a1a;
+    }
+
+    input, textarea {
+      background: #1a1a1a;
+    }
+  </style>
+</head>
+
+<body class="font-sans">
+  <!-- Landing Section -->
+  <section class="min-h-screen flex items-center justify-center text-center px-6">
+    <div>
+      <h1 class="text-5xl md:text-7xl font-bold mb-4">Hi, I'm Ronak Patel</h1>
+      <h2 class="text-2xl md:text-3xl text-indigo-400 mb-6">
+        <span id="typed"></span>
+      </h2>
+      <a href="#projects" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition">Explore Projects</a>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="py-20 px-6 bg-gray-900">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://via.placeholder.com/400" alt="Ronak Patel" class="rounded-2xl shadow-xl">
+      <div>
+        <h3 class="text-3xl font-semibold mb-4">About Me</h3>
+        <p class="text-lg leading-relaxed text-gray-300">
+          I’m a passionate Data Analyst with a strong finance background and a keen interest in turning data into impactful insights. I’ve transitioned into analytics to solve real-world problems with SQL, Power BI, and Python.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-4xl font-semibold text-center mb-12">Projects</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass p-6 rounded-xl hover:scale-105 transition">
+          <img src="https://via.placeholder.com/300x200" class="rounded mb-4">
+          <h4 class="text-xl font-bold mb-2">IBM HR Analytics</h4>
+          <p class="text-sm text-gray-300 mb-2">Employee Attrition insights and predictions.</p>
+          <div class="text-xs text-indigo-300">Python, ML, Power BI</div>
+        </div>
+        <div class="glass p-6 rounded-xl hover:scale-105 transition">
+          <img src="https://via.placeholder.com/300x200" class="rounded mb-4">
+          <h4 class="text-xl font-bold mb-2">Uber Supply-Demand Gap</h4>
+          <p class="text-sm text-gray-300 mb-2">Analyzed peak hour imbalances and driver behavior.</p>
+          <div class="text-xs text-indigo-300">SQL, Python, Tableau</div>
+        </div>
+        <div class="glass p-6 rounded-xl hover:scale-105 transition">
+          <img src="https://via.placeholder.com/300x200" class="rounded mb-4">
+          <h4 class="text-xl font-bold mb-2">Superstore Sales Dashboard</h4>
+          <p class="text-sm text-gray-300 mb-2">Advanced Sales KPIs and DAX logic with RLS.</p>
+          <div class="text-xs text-indigo-300">Power BI, DAX, Excel</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 px-6 bg-gray-900">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-4xl font-semibold text-center mb-12">Skills</h3>
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-6 text-center">
+        <div class="glass p-4 rounded-lg">SQL</div>
+        <div class="glass p-4 rounded-lg">Power BI</div>
+        <div class="glass p-4 rounded-lg">Python</div>
+        <div class="glass p-4 rounded-lg">Excel</div>
+        <div class="glass p-4 rounded-lg">Tableau</div>
+        <div class="glass p-4 rounded-lg">GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-4xl font-semibold text-center mb-12">Blog</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="glass p-6 rounded-xl">
+          <h4 class="text-xl font-bold mb-2">How I Switched to Data Analytics</h4>
+          <p class="text-sm text-gray-300">My journey from finance to analytics using free tools, internships, and real-world projects.</p>
+        </div>
+        <div class="glass p-6 rounded-xl">
+          <h4 class="text-xl font-bold mb-2">Top 5 Power BI Tricks You Must Know</h4>
+          <p class="text-sm text-gray-300">Advanced DAX logic and UI design hacks for impactful dashboards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume + Contact -->
+  <section id="contact" class="py-20 px-6 bg-gray-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-4xl font-semibold mb-8">Let's Connect</h3>
+      <a href="/resume.pdf" download class="inline-block mb-6 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded">Download Resume</a>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded text-black">
+        <input type="email" placeholder="Your Email" class="w-full p-3 rounded text-black">
+        <textarea placeholder="Your Message" class="w-full p-3 rounded text-black" rows="4"></textarea>
+        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white py-3 rounded">Send Message</button>
+      </form>
+      <div class="mt-6 flex justify-center space-x-4">
+        <a href="https://www.linkedin.com/in/ronak-patel1790/" target="_blank" class="text-indigo-400 hover:text-white">LinkedIn</a>
+        <a href="https://github.com/ronak171990" target="_blank" class="text-indigo-400 hover:text-white">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-sm py-4 bg-black text-gray-500">© 2025 Ronak Patel. All rights reserved.</footer>
+
+  <script>
+    new Typed("#typed", {
+      strings: ["Data Analyst", "Dashboard Designer", "SQL Expert", "Power BI Specialist"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>
