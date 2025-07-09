@@ -7,62 +7,60 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <style>
- .floating-icons {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
+    .floating-icons {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
 
-.float-icon {
-  position: absolute;
-  width: 60px;               /* ⬆️ Increased size */
-  opacity: 0.2;
-  animation: float 10s infinite ease-in-out;  /* ⬆️ Faster movement */
-}
+    .float-icon {
+      position: absolute;
+      width: 60px;
+      opacity: 0.2;
+      animation: float 10s infinite ease-in-out;
+    }
 
-.delay-1 { top: 5%; left: 10%; animation-delay: 0s; }
-.delay-2 { top: 15%; left: 80%; animation-delay: 1s; }
-.delay-3 { top: 25%; left: 50%; animation-delay: 2s; }
-.delay-4 { top: 40%; left: 20%; animation-delay: 3s; }
-.delay-5 { top: 60%; left: 70%; animation-delay: 4s; }
-.delay-6 { top: 75%; left: 30%; animation-delay: 5s; }
-.delay-7 { top: 50%; left: 90%; animation-delay: 6s; }
-.delay-8 { top: 65%; left: 5%;  animation-delay: 7s; }
-.delay-9 { top: 30%; left: 60%; animation-delay: 8s; }
+    .delay-1 { top: 5%; left: 10%; animation-delay: 0s; }
+    .delay-2 { top: 15%; left: 80%; animation-delay: 1s; }
+    .delay-3 { top: 25%; left: 50%; animation-delay: 2s; }
+    .delay-4 { top: 40%; left: 20%; animation-delay: 3s; }
+    .delay-5 { top: 60%; left: 70%; animation-delay: 4s; }
+    .delay-6 { top: 75%; left: 30%; animation-delay: 5s; }
+    .delay-7 { top: 50%; left: 90%; animation-delay: 6s; }
+    .delay-8 { top: 65%; left: 5%; animation-delay: 7s; }
+    .delay-9 { top: 30%; left: 60%; animation-delay: 8s; }
 
-@keyframes float {
-  0%   { transform: translateY(0px) rotate(0deg); }
-  50%  { transform: translateY(-40px) rotate(10deg); }
-  100% { transform: translateY(0px) rotate(0deg); }
-}
-</style>
-
+    @keyframes float {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-40px) rotate(10deg); }
+      100% { transform: translateY(0px) rotate(0deg); }
+    }
+  </style>
 </head>
-
-<body class="font-sans">
-
-  <!-- Floating Icons Background -->
+<body class="font-sans bg-gray-100 text-gray-900">
+  <!-- Floating Icons -->
   <div class="floating-icons">
-    <img src="assets/python.png" class="float-icon delay-1" />
-    <img src="assets/powerbi.png" class="float-icon delay-2" />
-    <img src="assets/microsoft-excel.png" class="float-icon delay-3" />
-    <img src="assets/sql.png" class="float-icon delay-4" />
-    <img src="assets/git.png" class="float-icon delay-5" />
-    <img src="assets/github.png" class="float-icon delay-6" />
-    <img src="assets/visual-studio-code.png" class="float-icon delay-7" />
-    <img src="assets/mysql.png" class="float-icon delay-8" />
-    <img src="assets/tableau-software.png" class="float-icon delay-9" />
+    <img src="assets/python.png" class="float-icon delay-1" alt="Python">
+    <img src="assets/powerbi.png" class="float-icon delay-2" alt="Power BI">
+    <img src="assets/microsoft-excel.png" class="float-icon delay-3" alt="Excel">
+    <img src="assets/sql.png" class="float-icon delay-4" alt="SQL">
+    <img src="assets/git.png" class="float-icon delay-5" alt="Git">
+    <img src="assets/github.png" class="float-icon delay-6" alt="GitHub">
+    <img src="assets/visual-studio-code.png" class="float-icon delay-7" alt="VS Code">
+    <img src="assets/mysql.png" class="float-icon delay-8" alt="MySQL">
+    <img src="assets/tableau-software.png" class="float-icon delay-9" alt="Tableau">
   </div>
 
-  <!-- Landing -->
+  <!-- Hero Section -->
   <section class="min-h-screen flex items-center justify-center text-center px-6 relative z-10">
     <div>
       <h1 class="text-5xl md:text-7xl font-bold mb-4">Hi, I'm Ronak Patel</h1>
+      <p class="text-lg md:text-xl text-indigo-500 font-medium mb-2">Ex-Finance Leader | Data Analyst | Turning Numbers into Narratives</p>
       <h2 class="text-2xl md:text-3xl text-indigo-400 mb-6">
         <span id="typed"></span>
       </h2>
@@ -202,21 +200,21 @@
         <a href="https://github.com/ronak171990/retail-sales-response-analysis" target="_blank" class="text-sm text-indigo-500 underline">View on GitHub</a>
       </div>
 
-      <div class="glass p-6 rounded-xl hover:scale-105 transition">
+      <div class="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl transition transform hover:-translate-y-1">
         <h4 class="text-xl font-bold mb-2">Online Retail II – Ecommerce EDA</h4>
         <p class="text-sm text-gray-300 mb-2">• Cleaned and analyzed online retail transactions<br>• Identified top countries and product categories</p>
         <div class="text-xs text-indigo-300 mb-2">Python, Pandas, Matplotlib</div>
         <a href="https://github.com/ronak171990/Online-Retail-II-Ecommerce_EDA" target="_blank" class="text-sm text-indigo-500 underline">View on GitHub</a>
       </div>
 
-      <div class="glass p-6 rounded-xl hover:scale-105 transition">
+      <div class="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl transition transform hover:-translate-y-1">
         <h4 class="text-xl font-bold mb-2">Higher Education Course Analysis</h4>
         <p class="text-sm text-gray-300 mb-2">• Drilldown dashboard of course enrollments<br>• Insights on top institutes and domains</p>
         <div class="text-xs text-indigo-300 mb-2">Power BI, SQL</div>
         <a href="https://github.com/ronak171990/Higher-Education-Course-Data-with-Power-BI" target="_blank" class="text-sm text-indigo-500 underline">View on GitHub</a>
       </div>
 
-      <div class="glass p-6 rounded-xl hover:scale-105 transition">
+      <div class="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl transition transform hover:-translate-y-1">
         <h4 class="text-xl font-bold mb-2">Superstore Sales Trend Analysis</h4>
         <p class="text-sm text-gray-300 mb-2">• Tracked KPIs over time and categories<br>• Applied DAX for time-series insights</p>
         <div class="text-xs text-indigo-300 mb-2">Power BI, DAX, Excel</div>
