@@ -69,38 +69,55 @@
   </div>
 
   <!-- Hero Section -->
-  <section class="min-h-screen flex items-center justify-center text-center px-6 relative z-10">
-    <div>
-      <h1 class="text-5xl md:text-7xl font-bold mb-4">Hi, I'm Ronak Patel</h1>
-      <h2 class="text-lg md:text-xl text-gray-400 mb-2 italic">Ex-Finance Operations Lead | Data Analyst | Turning Numbers into Narratives</h2>
-      <h2 class="text-2xl md:text-3xl text-indigo-400 mb-6">
+<section class="min-h-screen flex items-center justify-center text-center px-6 relative z-10">
+  <div>
+    <h1 class="text-5xl md:text-7xl font-bold mb-4">Hi, I'm Ronak Patel</h1>
+
+    <!-- Tagline -->
+    <h2 class="text-lg md:text-xl text-gray-400 mb-2 italic">
+      Ex-Finance Operations Lead | Data Analyst | Turning Numbers into Narratives
+    </h2>
+
+    <!-- Typewriter Effect Section with fixed spacing -->
+    <div class="mb-6 min-h-[48px]">
+      <h2 class="text-2xl md:text-3xl text-indigo-400">
         <span id="typed"></span>
-      </h2>
-      <a href="#projects" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition">Explore Projects</a>
-    </div>
-  </section>
+        </h2>
+      </div>
+
+      
+    <!-- Call to Action -->
+    <a href="#projects" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition">
+      Explore Projects
+    </a>
+  </div>
+</section>
+
   
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      new Typed("#typed", {
+  document.addEventListener("DOMContentLoaded", function () {
+    // Typewriter animation
+    new Typed("#typed", {
       strings: ["Data Analyst", "SQL Expert", "Power BI Specialist", "Dashboard Designer"],
-      typeSpeed: 40,
-      backSpeed: 20,
-      backDelay: 2000,
-      startDelay: 300,
-      smartBackspace: true,
+      typeSpeed: 50,          // Slow down typing speed
+      backSpeed: 30,          // Slow down backspacing
+      backDelay: 2000,        // Pause before backspacing
+      startDelay: 500,        // Delay before typing starts
+      smartBackspace: true,   // Only erase what's necessary
       loop: true,
       showCursor: true,
       cursorChar: "|"
-   });
+    });
 
+    // Floating icons randomization
     const icons = document.querySelectorAll('.float-icon');
     icons.forEach(icon => {
       icon.style.animationDuration = `${Math.random() * 10 + 20}s`;
       icon.style.opacity = Math.random() * 0.5 + 0.3;
-      });
     });
-  </script>
+  });
+</script>
+
 
 
   <!-- About -->
