@@ -45,13 +45,14 @@
       transform: scale(1.05);
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     }
-    .border-python { border: 2px solid #3776AB; }
-    .border-powerbi { border: 2px solid #F2C811; }
-    .border-sql { border: 2px solid #E38C00; }
-    .border-excel { border: 2px solid #1D6F42; }
-    .border-tableau { border: 2px solid #E97627; }
-    .border-flask { border: 2px solid #000000; }
-    .border-html { border: 2px solid #e34c26; }
+    .border-python { border-color: #3776AB; }
+    .border-powerbi { border-color: #F2C811; }
+    .border-sql { border-color: #E38C00; }
+    .border-excel { border-color: #1D6F42; }
+    .border-tableau { border-color: #E97627; }
+    .border-github { border-color: #000000; }
+    .border-git { border-color: #F05032; }
+    .border-vscode { border-color: #007ACC; }
   </style>
 </head>
 <body class="font-sans bg-gradient-to-br from-gray-900 to-gray-800 text-white">
@@ -145,12 +146,16 @@
     <div class="grid md:grid-cols-3 gap-8">
 
       <!-- Project Card Template -->
-      <div class="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl transition transform hover:-translate-y-1">
-        <h4 class="text-xl font-bold mb-2 text-indigo-900">IBM HR Analytics</h4>
-        <p class="text-sm text-gray-700 mb-2">• Employee Attrition insights<br>• Predictive modeling</p>
-        <div class="text-xs text-indigo-600 mb-2">Python, ML, Power BI</div>
-        <a href="https://github.com/ronak171990/IBM-HR-Analytics-Employee-Attrition-Performance-with-PowerBI-Dashboard" target="_blank" class="text-sm text-indigo-500 underline">View on GitHub</a>
-      </div>
+      <div class="bg-gray-800 text-white border-2 border-indigo-500 rounded-xl p-6 shadow-md hover:shadow-indigo-500/50 transition duration-300 transform hover:-translate-y-2 relative group">
+        <h4 class="text-xl font-bold mb-2">IBM HR Analytics</h4>
+        <p class="text-sm text-gray-300 mb-2">• Employee Attrition insights<br>• Predictive modeling</p>
+        <div class="text-xs text-indigo-300 mb-2">Python, ML, Power BI</div>
+        <a href="https://github.com/ronak171990/IBM-HR-Analytics-Employee-Attrition-Performance-with-PowerBI-Dashboard" target="_blank" class="text-sm text-indigo-400 underline">View on GitHub</a>
+      <!-- Tooltip -->
+            <div class="absolute top-2 right-2 bg-black text-xs text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300">
+            </div>
+          </div>
+        
 
       <div class="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl transition transform hover:-translate-y-1">
         <h4 class="text-xl font-bold mb-2 text-indigo-900">Uber Supply-Demand Gap</h4>
