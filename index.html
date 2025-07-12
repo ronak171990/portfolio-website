@@ -4,8 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ronak Patel | Data Analyst Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- ✅ Correct Tailwind CDN (do not include the broken one above) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom styles -->
   <style>
     .floating-icons {
       position: absolute;
@@ -38,13 +41,16 @@
       50% { transform: translateY(-40px) rotate(10deg); }
       100% { transform: translateY(0px) rotate(0deg); }
     }
+
     .card-hover {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .card-hover:hover {
       transform: scale(1.05);
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     }
+
     .border-python { border-color: #3776AB; }
     .border-powerbi { border-color: #F2C811; }
     .border-sql { border-color: #E38C00; }
@@ -56,6 +62,7 @@
     .border-mysql { border-color: #4479A1; }
   </style>
 </head>
+
 <body class="font-sans bg-gradient-to-br from-gray-900 to-gray-800 text-white">
   <!-- Floating Icons -->
   <div class="floating-icons">
